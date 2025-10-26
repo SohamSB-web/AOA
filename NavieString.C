@@ -3,7 +3,7 @@
 
 #define MAX_SIZE 1000
 
-void naiveStringMatch(const char* text, const char* pattern)
+void naiveStringMatch(const char text[], const char pattern[])
 {
     int n = strlen(text);
     int m = strlen(pattern);
@@ -38,4 +38,5 @@ int main()
 
     naiveStringMatch(text, pattern);
     return 0;
+
 }
