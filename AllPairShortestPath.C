@@ -5,7 +5,6 @@ void printSolution(int V, int dist[V][V]) {
     printf("The following matrix shows the shortest distances between every pair of vertices:\n");
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
-            // --- CHANGE 2: Use standard 2D array indexing ---
             if (dist[i][j] == INF)
                 printf("%7s", "INF");
             else
@@ -34,7 +33,7 @@ int main() {
     printf("Enter the number of vertices: ");
     scanf("%d", &V);
 
-    int dist[V][V]; // VLA (Variable Length Array)
+    int dist[V][V];
 
     printf("Enter the adjacency matrix:\n");
     printf("Use 99999 for infinity (no direct edge).\n");
@@ -47,3 +46,4 @@ int main() {
     FloydWarshall(V, dist);
     return 0;
 }
+
