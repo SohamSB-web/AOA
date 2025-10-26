@@ -20,7 +20,7 @@ void naiveStringMatch(const char text[], const char pattern[])
         }
         if (j == m)
         {
-            printf("Pattern found at index %d\\n", i);
+            printf("Pattern found at index %d\n", i);
         }
     }
 }
@@ -41,5 +41,6 @@ int main()
     return 0;
 
 }
+
 
 
