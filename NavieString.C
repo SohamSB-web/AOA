@@ -34,11 +34,12 @@ int main()
     printf("Enter the pattern: ");
     fgets(pattern, sizeof(pattern), stdin);
 
-    text[strcspn(text, "\\n")] = '\\0';
-    pattern[strcspn(pattern, "\\n")] = '\\0';
+    text[strcspn(text, "\n")] = '\0';
+    pattern[strcspn(pattern, "\n")] = '\0';
 
     naiveStringMatch(text, pattern);
     return 0;
 
 }
+
 
